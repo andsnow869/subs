@@ -1,0 +1,142 @@
+body{
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.container{
+    max-width: 1160px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+.card__desc{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:20px;
+}
+
+.card{
+    padding: 30px;
+    display: flex;
+    flex: 1 1 33.33%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+}
+.card:hover{
+    scale: 1.1;
+   box-shadow: 10px 5px 5px rgba(211, 211, 211, 1);
+}
+
+#firstCard{
+    background:linear-gradient(to top right,#ecbcd4, #cc94ac);
+}
+.price__first{
+    color:#cc94ac;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#secondCard{
+    background:linear-gradient(to top right,#ecbcd4,#8e616d );
+}
+.price__second{
+    color: #8e616d;
+    font-size: 30px;
+    font-weight: 700;
+}
+#thirdCard{
+    background:linear-gradient(to top right,#ecbcd4, #592a3e );
+}
+.price__third{
+    color:#592a3e;
+    font-size: 30px;
+    font-weight: 700;
+}
+.card__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 44px;
+    font-weight: 700;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
+}
+
+.list__item{
+    list-style-type: none;
+    position: relative;
+    margin-left: 10px;
+    
+}
+.list__item::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:-17px;
+    width: 5px;
+    height: 12px;
+    /*background-color: aqua;*/
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: 45deg;
+}
+
+.price{
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:-30px;
+    margin: 30px 0 30px 0;
+}
+
+
+.button{
+   display: inline-block;
+   align-self: center;
+   text-decoration: none;
+   margin-top: 50px;
+   color: #fff;
+   padding:15px 30px;
+   border: 2px solid #fff;
+   text-transform: uppercase;
+   border-radius: 50px;
+   transition: all 0.3s linear;
+   font-weight: 700;
+}
+.button:hover{
+    scale:1.1;
+}
+.button__first:hover{
+    background:linear-gradient(to top right,#ecbcd4, #cc94ac);
+}
+.button__second:hover{
+    background:linear-gradient(to top right,#ecbcd4,#8e616d );
+}
+.button__third:hover{
+    background:linear-gradient(to top right,#ecbcd4, #592a3e );
+}
