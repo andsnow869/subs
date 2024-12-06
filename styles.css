@@ -1,21 +1,22 @@
 body{
     font-family: monospace;
-    height: 100vh;
-    display: flex;
-    align-items: center;
     color: #fff;
+    display: flex;
 }
 .container{
     max-width: 1160px;
     padding: 0 30px;
-    margin: 0 auto;
-    width: 100%;
+    margin: 50px auto;
 }
 
 .cards{
     display: flex;
     justify-content: space-around;
     gap:30px;
+
+    @media screen and  (max-width:900px){
+        flex-wrap: wrap;
+    }
 }
 .card__desc{
    display: flex;
@@ -27,7 +28,6 @@ body{
 .card{
     padding: 30px;
     display: flex;
-    flex: 1 1 33.33%;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 50px;
